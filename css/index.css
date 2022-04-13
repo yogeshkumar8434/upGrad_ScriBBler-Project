@@ -1,0 +1,16 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("/Course+6+Project+Stub+-+Scribbler/images/background.jpg");
+  }
+  
+  .mid{
+    text-align: center;
+    margin: auto;
+    padding-top: 15%;
+  }
+
+  .rightshift{
+    padding-top: 10px;
+  }

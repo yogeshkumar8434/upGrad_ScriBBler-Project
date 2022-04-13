@@ -1,0 +1,20 @@
+#title{
+    padding: 5px 5px 5px 20px;
+}
+#title #heading{
+    font-family: "Montez", cursive;
+    color: blue;
+    font-size: 50px;
+}
+#title #sub-heading{
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Satisfy', cursive;
+margin-top: -15px;
+}
+
+#btnright{
+    margin-top: -98px;
+    padding: 5px 5px 5px 5px;
+}
