@@ -14,3 +14,7 @@ body {
   .rightshift{
     padding-top: 10px;
   }
+  .btn a{
+    text-decoration: none;
+    color: black;
+  }
