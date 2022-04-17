@@ -1,4 +1,4 @@
-function Popupsignup(){
-    var box = document.getElementById('signup');
-    box.innerHTML;
-}
+function Popupsignup() {
+  var signInModal = document.getElementById("signin");
+  signInModal.style.display = "none";
+  };

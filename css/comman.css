@@ -18,3 +18,8 @@ margin-top: -15px;
     margin-top: -98px;
     padding: 5px 5px 5px 5px;
 }
+
+#signin a{
+    color: blue;
+    cursor: pointer;
+}

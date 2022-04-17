@@ -9,6 +9,7 @@
 
     <!-- script file -->
     <script src="/js/post.js"></script>
+    <script src="/js/postlist.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -82,7 +83,7 @@
                             <input type="password" class="form-control" placeholder="Enter Password" required>
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-success" type="button">Sign Up</button>
+                            <button class="btn btn-success" >Sign Up</button>
                         </div>
                     </form>
                 </div>
@@ -112,16 +113,19 @@
                             <input type="password" class="form-control" placeholder="Enter Password" required>
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-success" type="button">Sign In</button>
+                            <button class="btn btn-success" >Sign In</button>
                         </div>
                     </form>
                 </div>
-                <h6 class="text-center">Not a member? <a href="" style="text-decoration: none">Sign Up</a></h6>
+                <h6 class="text-center">Not a member? <a onclick="Popupsignup()" data-bs-toggle="modal" data-bs-target="#signup" data-bs-dismiss="modal" >Sign
+                    Up</a></h6>
             </div>
         </div>
     </div>
     </div>
 
+
+    <!-- Blog Post -->
     
     <div class="post-wrapper">
         <p class="post-title" id="postTitle">abcd</p>

@@ -43,6 +43,75 @@
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Sign
                 Up</button>
         </div>
+        <!-- Sign up Button -->
+
+    <div class="modal" id="signup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class=" modal-title ">Get Start</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label required ">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Full Name" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required">Username</label>
+                            <input type="text" class="form-control" placeholder="Enter Username" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter Password" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Enter Password" required>
+                        </div>
+                       
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success" >Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign in Button -->
+
+    <div class="modal" id="signin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome Back!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label required">Username</label>
+                            <input type="text" class="form-control" placeholder="Enter Username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter Password" required>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success" >Sign In</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <h6 class="text-center">Not a member? <a onclick="Popupsignup()" data-bs-toggle="modal" data-bs-target="#signup" data-bs-dismiss="modal" >Sign
+                    Up</a></h6>
+            </div>
+        </div>
+    </div>
     </div>
 
 
@@ -86,73 +155,7 @@
     </div>
 
 
-    <!-- Sign up Button -->
-
-    <div class="modal" id="signup">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class=" modal-title ">Get Start</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label required ">Full Name</label>
-                            <input type="text" class="form-control" placeholder="Enter Full Name" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Username</label>
-                            <input type="text" class="form-control" placeholder="Enter Username" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Password</label>
-                            <input type="password" class="form-control" placeholder="Enter Password" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="Enter Password" required>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-success" type="button">Sign Up</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Sign in Button -->
-
-    <div class="modal" id="signin">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Welcome Back!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label required">Username</label>
-                            <input type="text" class="form-control" placeholder="Enter Username" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Password</label>
-                            <input type="password" class="form-control" placeholder="Enter Password" required>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-success" type="button">Sign In</button>
-                        </div>
-                        
-                    </form>
-                </div>
-                <h6 class="text-center">Not a member? <a href="" style="text-decoration: none" onclick="Popupsignup()">Sign Up</a></h6>
-            </div>
-        </div>
-    </div>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
