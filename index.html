@@ -2,169 +2,203 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
+    <!--Include Font Awesome file here -->
 
-    <!-- TODO: Include Google Fonts file here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet"/>
+    
     <link
-        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=Righteous&family=Satisfy&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet" />
+    href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap"  rel="stylesheet"/>
+    
+    <!-- Include Font Awesome file here -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- Include Bootstrap here-->
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+/>
 
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet" />
-
-    <!-- Bootstrap link -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-        <!-- Script File -->
-    <script src="/js/index.js"></script>
-
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="/css/comman.css">
-    <link rel="stylesheet" href="/css/index.css">
+  <!-- Include Style CSS file here-->
+  <link rel="stylesheet" href="/css/comman.css" />
+    <link rel="stylesheet" href="/css/index.css" />
 </head>
 
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
+    <!-- Include all your code for the header and home page here -->
     <div class="header">
         <div id="title">
-            <p id="heading">ScriBBler</p>
-            <p id="sub-heading">Explore, Imagine, Create</p>
+             <p id="heading">ScriBBler</p>
+             <p id="sub-heading">Explore, Imagine, Create</p>
         </div>
-        <div id="btnright" class="text-right ">
-            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#signin">Sign
-                In</button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Sign
-                Up</button>
+        <div id="button-wrapper">
+            <button id="signUp">Sign Up</button>
+            <button id="signIn">Sign In</button>
         </div>
-        <!-- Sign up Button -->
+         <!-- The Sign Up Modal -->
+      <div id="modal-signUp" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close-icon" id="closeSignUp"
+              ><i class="fa fa-times fa-lg" aria-hidden="true"></i
+            ></span>
+            <h2 class="modal-heading">Get Started</h2>
+          </div>
+          <div class="modal-body">
+            <form >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="Enter your username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="cnfpwd">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cnfpwd"
+                  placeholder="Re-enter your password"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-block btn-success">
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
 
-    <div class="modal" id="signup">
-        <div class="modal-dialog">
+       <!-- The Sign In Modal -->
+       <div id="signInModal" class="modal">
+                   <!-- Modal content -->
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class=" modal-title ">Get Start</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="modal-header">
+              <span class="close-icon" id="closeSignIn"
+                ><i class="fa fa-times fa-lg" aria-hidden="true"></i
+              ></span>
+              <h2 class="modal-heading">Welcome Back!</h2>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Enter your username"
+                    required="true"
+                  />
                 </div>
-                <div class="modal-body">
+                <div class="form-group">
+                  <label for="pwd">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="pwd"
+                    placeholder="Enter your password"
+                    required="true"
+                  />
+                </div>
+                <button type="submit" class="btn btn-block btn-success">
+                  Sign In
+                </button>
+                <p class="not-member">
+                  Not a member? <span id="signUpLink">Sign Up</span>
+                </p>
+              </form>
+            </div>
+            </div>
+       </div>
+    </div>
+    <div class="posts">
+        <div class="posts-btn">
+        <button onclick="location.href='./html/postslist.html'" class="home-btns">
+         All Posts
+        </button>
+        <button id="createPostBtn" class="home-btns" >Create Post
+        </button>
+        </div>
+        <!-- Create Post Modal-->
+        <div id="createPost" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span id="createPost-close" class="close-icon">
+                      <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                    </span>
+                    <h2 class="modal-heading">Pen Your Post</h2>
+                  </div>
+                  <div class="modal-body">
                     <form>
-                        <div class="mb-3">
-                            <label class="form-label required ">Full Name</label>
-                            <input type="text" class="form-control" placeholder="Enter Full Name" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Username</label>
-                            <input type="text" class="form-control" placeholder="Enter Username" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Password</label>
-                            <input type="password" class="form-control" placeholder="Enter Password" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="Enter Password" required>
-                        </div>
-                       
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-success" >Sign Up</button>
-                        </div>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="title"
+                          placeholder="Enter title of your post"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="contents">Contents</label>
+                        <textarea
+                          type="text"
+                          class="form-control contents"
+                          id="contents"
+                          placeholder="Enter the contents of your post"
+                        ></textarea>
+                      </div>
+                      <div class="create-btn-tab">
+                        <button
+                          type="submit"
+                          class="btn btn-success"
+                          id="createPost"
+                        >
+                          Create
+                        </button>
+                      </div>
                     </form>
+                  </div>
                 </div>
-
-            </div>
         </div>
     </div>
-
-
-    <!-- Sign in Button -->
-
-    <div class="modal" id="signin">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Welcome Back!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label required">Username</label>
-                            <input type="text" class="form-control" placeholder="Enter Username" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label required">Password</label>
-                            <input type="password" class="form-control" placeholder="Enter Password" required>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-success" >Sign In</button>
-                        </div>
-                        
-                    </form>
-                </div>
-                <h6 class="text-center">Not a member? <a onclick="Popupsignup()" data-bs-toggle="modal" data-bs-target="#signup" data-bs-dismiss="modal" >Sign
-                    Up</a></h6>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <!-- Mid Button -->
-    <div class="mid">
-        <button type="button" class="btn btn-warning"><a href="/html/postslist.html"><b>All Posts</b></a></button>
-        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#creat-post"><b>Create
-                Post</b></button>
-    </div>
-
-
-    <!-- Create post modal box -->
-
-
-    <div class="modal fade bd-example-modal-lg" id="creat-post" tabindex="-1" role="dialog"
-        aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-
-
-                <div class="col-md-12 text-right rightshift ">
-                    <button type="button" class="btn-close pt-10" data-bs-dismiss="modal"></button>
-                </div>
-                <h5 class=" modal-title text-center">Pen Your Post</h5>
-                <div class="modal-body">
-                    <form>                  
-                            <label class="form-label ">Title</label>
-                            <input type="text" class="form-control">
-                        
-                        <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Content</label>
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-success">Create</button>
-                </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
     
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+    <script src="/js/common.js"></script>
+    <script src="/js/index.js"></script>
+    
 </body>
 
 </html>
